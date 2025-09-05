@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rithik - Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: rgb(0, 0, 33);
+      color: white;
+      font-family: 'Roboto', sans-serif;
+    }
+    
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 0 20px;
+      height: 80px;
+      background-color: rgb(18, 18, 62);
+    }
+
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      gap: 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: rgb(153, 153, 226);
+      font-size: 1.05rem;
+    }
+
+    .left {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .firstSection {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      padding: 40px 20px;
+    }
+
+    .leftSection {
+      flex: 1 1 300px;
+      font-size: 2.5rem;
+      text-align: center;
+    }
+
+    .rightSection img {
+      width: 100%;
+      max-width: 300px;
+    }
+
+    .purple {
+      color: blueviolet;
+    }
+
+    #element {
+      color: blueviolet;
+    }
+
+    .secondSection,
+    .aboutSection,
+    .skillsSection,
+    .projectsSection,
+    #contact {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    h1,
+    h2 {
+      text-align: center;
+    }
+
+    .skillCard,
+    .projectCard {
+      background-color: #1f04cc2b;
+      border-radius: 15px;
+      padding: 20px;
+      margin: 20px 0;
+    }
+
+    .projectCard img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .contact-info p,
+    .contact-info a {
+      text-align: center;
+      display: block;
+      margin: 10px 0;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin: 10px 0;
+    }
+
+    .cv-button {
+      background-color: red;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      margin: 20px auto;
+      display: block;
+      width: fit-content;
+      border: 2px solid white;
+    }
+
+
+
+    .contact-form {
+      max-width: 500px;
+      margin: 20px auto;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      background: #444;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .contact-form button {
+      background: #b369ff;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #12123e;
+    }
+
+    @media screen and (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .firstSection {
+        flex-direction: column-reverse;
+        text-align: center;
+      }
+
+      .leftSection {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div class="left">Rithik's Portfolio</div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="firstSection">
+      <div class="leftSection">
+        <div>Hi, My name is <span class="purple">Rithik Yadav</span></div>
+        <div>and I am a passionate</div>
+        <div><span id="element"></span></div>
+      </div>
+      <div class="rightSection">
+        <img src="image.png" alt="Developer Illustration" />
+      </div>
+    </section>
+
+    <section class="secondSection">
+      <img src="my photo.jpg" alt="Rithik Yadav Profile Photo" style="width: 300px; display: block; margin: auto;" />
+    </section>
+
+    <section id="about" class="aboutSection">
+      <h1><span class="purple">About</span> Me</h1>
+      <h2>-- Frontend Developer</h2>
+      <p>
+        Hi I’m Rithik Yadav, a final-year Computer Science student passionate about Frontend Development.
+        I build responsive websites using HTML, CSS, and JavaScript, and I’m learning React.
+        I love designing clean, user-friendly interfaces.
+      </p>
+      <h2>Education</h2>
+      <p>
+        <strong style="color: red;">10th:</strong> <span style="color: blueviolet;">52% (CBSE)</span><br />
+        <strong style="color: red;">12th:</strong> <span style="color: blueviolet;">61% (CBSE)</span><br />
+        <strong style="color: red;">B.Tech:</strong> <span style="color: blueviolet;">Available soon..</span>
+      </p>
+    </section>
+
+    <section id="skills" class="skillsSection">
+      <h1><span class="purple">My</span> Skills</h1>
+      <div class="skillCard">
+        <h2>💻 C/C++ Language</h2>
+        <p>Basics of programming logic, syntax, and control structures.</p>
+      </div>
+      <div class="skillCard">
+        <h2>🌐 Web Development</h2>
+        <p>Responsive design using HTML, CSS, JavaScript, and learning React.js.</p>
+      </div>
+      <div class="skillCard">
+        <h2>📊 DSA</h2>
+        <p>Learning Data Structures and Algorithms to improve coding problem-solving.</p>
+      </div>
+    </section>
+
+    <section id="projects" class="projectsSection">
+      <h1><span class="purple">My</span> Projects</h1>
+      <div class="projectCard">
+        <img src="Brand page.png" alt="Brand Page Project" />
+        <h2>Brand Page</h2>
+        <p>Created a brand page using HTML, CSS, JS & React. Clean layout and fully responsive.</p>
+        <a href="#" target="_blank">View Project</a>
+      </div>
+      <div class="projectCard">
+        <img src="TO-do List.jpg" alt="To-do List Project" />
+        <h2>To-do List</h2>
+        <p>Interactive to-do app with task add/delete features. Built with HTML, CSS, JS.</p>
+        <a href="#" target="_blank">View Project</a>
+      </div>
+       <div class="projectCard">
+        <img src="E-commerce website.png" alt="To-do List Project" />
+        <h2>E-commerce website</h2>
+        <p>An e-commerce website project built with responsive design principles to ensure a user-friendly shopping experience..</p>
+        <a href="#" target="_blank">View Project</a>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2><span class="purple">Contact</span> Me</h2>
+      <div class="contact-info">
+        <p><i class="fas fa-paper-plane"></i> rithikyadav2222yy@gmail.com</p>
+        <p><i class="fas fa-phone-alt"></i> 952312</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <a href="your-cv.pdf" download class="cv-button">Download CV</a>
+      </div>
+
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2025 Rithik Yadav. All rights reserved.</p>
+  </footer>
+
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Web Developer', 'Video Editor', 'Youtuber', 'Web Designer'],
+      typeSpeed: 50,
+      loop: true
+    });
+  </script>
+</body>
+
+</html>
